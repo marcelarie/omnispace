@@ -6,8 +6,14 @@
     background-color: #282828;
 }
 .navi {
-    background-color: #282828;
     overflow: hidden;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navi li {
+    display: inline-block;
+    padding: 0px 20px;
 }
 
 header {
@@ -25,8 +31,15 @@ li, a, p {
     color: #fbf1c7;
 }
 
-.bodyFont {
-    font-family: 'Space Mono', monospace;
-    color: #fbf1c7;
+.logo {
+    cursor: pointer;
+}
+
+button {
+    padding: 9px 25px;
+    background-color:#fbf1c7;
+    border: none;
+    align-self:center;
+    border-radius: 15px;
 }
 
