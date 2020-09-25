@@ -3,13 +3,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: whitesmoke ;
+    background-color: #282828;
 }
 .navi {
     background-color: #282828;
     overflow: hidden;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+}
+
 li, a {
     font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fbf1c7;
 }
+
