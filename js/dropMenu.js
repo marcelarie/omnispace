@@ -1,14 +1,15 @@
 function dropDown() {
-    document.getElementById("newReality").classList.toggle("show");
-}
-window.onclick = function(Event) {
-    if (!Event.target.matches('.dropButton')) 
-        var dropmenu = document.getElementsByClassName("insideDrop");
-        var i;
-        for (i = 0; i < dropmenu.length; i++) {
-            var openDropmenu = dropmenu[i];
-            if (openDropmenu.classList.contains('showMenu')) {
-            openDropmenu.classList.remove('showMenu');
+    document.getElementById("servicesDrop").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
         }
+      }
     }
-}
+  }
