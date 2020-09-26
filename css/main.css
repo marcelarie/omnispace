@@ -51,7 +51,6 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
     width: 100%;
     left: 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -60,7 +59,7 @@ body {
 /* Mega Menu header, if needed */
 .dropdown-content .header {
     background: #282828;
-    padding: 16px;
+    padding: 8px;
     color: white;
 }
 /* Show the dropdown menu on hover */
@@ -80,14 +79,26 @@ body {
     color: white;
 }
 .bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.70);
+    bottom: 4px;
+    padding:5px;
+    right: 10px;
+}
+.top-left {
+    position:absolute;
+    left:20%;
+    font-size: 200%;
+    top:5px;
 }
 .column img {
     vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15%;
+    display:flex;
+    padding:5px;
+    margin-right: 25%;
+    max-width:100%;
+    height:auto;
 }
 /* Future Menu */
 .servButton {
