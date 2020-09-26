@@ -51,7 +51,8 @@ border: none;
 cursor: pointer;
 }
 .dropButton:hover, .dropButton:focus {
-    background-attachment: #D4C8AF;
+    background-color: #D4C8AF;
+    color: #282828;
 }
 .dropmenu {
     position: relative;
@@ -76,4 +77,4 @@ cursor: pointer;
     background-color: bisque;
 }
 
-.showMenu {display:block;}
+.showMenu {display: block;}
