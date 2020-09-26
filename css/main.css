@@ -5,9 +5,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #282828;
+    background-color: #3A3632;
 }
 /* Navigation Bar */
+/* Color for the bar #282828 */
 .navi {
     overflow: hidden;
     list-style: none;
@@ -40,4 +41,39 @@ button {
     align-self:center;
     border-radius: 15px;
 }
+/* Services Menu */
+.dropButton {
+background-color: #282828;
+color: white;
+padding: 10px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+.dropButton:hover, .dropButton:focus {
+    background-attachment: #D4C8AF;
+}
+.dropmenu {
+    position: relative;
+    display: inline-block;
+}
+.insideDrop {
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.insideDrop a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #fbf1c7;
+}
 
+.insideDrop a:hover {
+    background-color: bisque;
+}
+
+.showMenu {display:block;}
