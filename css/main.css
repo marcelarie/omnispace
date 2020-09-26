@@ -1,40 +1,38 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* Base */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #282828;
 }
+/* Navigation Bar */
 .navi {
     overflow: hidden;
     list-style: none;
-    text-decoration: none;
 }
-
-.navi li {
+.navi li, a {
     display: inline-block;
     padding: 0px 20px;
+    text-decoration: none;
 }
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-
 }
-
 li, a, p {
     font-family: 'Space Mono', monospace;
     font-weight: 500;
     font-size: 16px;
     color: #fbf1c7;
 }
-
 .logo {
     cursor: pointer;
 }
-
+/* Future Menu */
 button {
     padding: 9px 25px;
     background-color:#fbf1c7;
