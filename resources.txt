@@ -1,0 +1,42 @@
+Fonts 
+https://fonts.google.com/
+
+For dropMenu and Navibar
+https://www.youtube.com/watch?v=gXkqy0b4M5g&t=1547s
+https://www.w3schools.com/howto/howto_js_dropdown.asp
+https://www.w3schools.com/howto/howto_css_mega_menu.asp
+https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp
+
+Photos
+https://unsplash.com/
+
+Responsive
+https://www.w3schools.com/html/html_responsive.asp
+
+Footer
+https://www.w3schools.com/tags/tag_footer.asp
+
+Buttons
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button3
+
+Columns
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns
+
+INCIDENTS
+25/09 - I was editing my main.css file and there where no changes
+        on the browser. Tired of searching on the web what was 
+        happening finally I find that there where two main.css files
+        one in the folder css/ and the other on the / root folder. 
+        git hash:fb96192,7379668 
+
+26/09 - JS script for dropMenu wasn't working because some propeties
+        of CSS where causing problems. Here I started to use code
+        from W3Schools.com git hash:18b465b, 7e79244
+
+27/09 - Merged wrong master with develop, so all the files where
+        deleted. I recovered evrything aborting and then the merge
+        was successful. The only thing is that I wanted just a merge
+        with the most recent commit and not loading all the commits.
+        I will find out how to do that. git hash: 4b08c39
+
+LESSONS
