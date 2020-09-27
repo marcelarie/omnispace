@@ -101,35 +101,3 @@ body {
     height:auto;
 }
 /* Future Menu */
-.servButton {
-    float: right;
-    background-color: #5B482C;
-    color: white;
-    padding: 20px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-  }
-.servButton:hover, .dropbtn:focus {
-    background-color: #806945;
-} 
-.dropMenu {
-    position: relative;
-    float:right;
-}
-.dropList {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropList a {
-    color: #fbf1c7;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropList a:hover {background-color: #282828}
-.show {display:block;}
