@@ -1,4 +1,0 @@
-For dropMenu and Navibar
-https://www.youtube.com/watch?v=gXkqy0b4M5g&t=1547s
-https://www.w3schools.com/howto/howto_js_dropdown.asp
-
