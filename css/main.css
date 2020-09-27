@@ -1,5 +1,8 @@
 /* Fonts */
+/* Space */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 /* Base */
 * {
     box-sizing: border-box;
@@ -8,7 +11,29 @@
 }
 body {
     background-color: #3A3632;
+    color:white;
+    background-image:url(https://assets.weforum.org/global_future_council/image/fy-jnmtI1UbE13ARCi8xGxx3mTtJtu0qoUJnU2zQPI8.jpeg);
 }
+footer a {
+    color:inherit;
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+/* Home Page */
+.centerText {
+    font-family: "Roboto", sans-serif;
+    font-size:130%;
+    text-align: center;
+}
+.centerText h1 {
+    margin-bottom: 5%;
+}
+.centerText p {
+    background-color:rgba(0, 0, 0, 0.70);
+}
+
 /* Navigation Bar */
 .logo {
     float:left;
@@ -16,6 +41,7 @@ body {
 }
 .navbar {
     overflow: hidden;
+    margin-bottom: 10%;
     display:inline-block;
     font-family: 'Space Mono', monospace;
 }
