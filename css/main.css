@@ -169,4 +169,16 @@ footer a {
     margin-bottom: 3%;
     float: middle;
 }
+/* Carrousel */
+.mySlides {
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.slides {
+    background-color: rgba(0, 0, 0, 0.75);
+    margin:1px;
+}
+
 /* Future Menu */
