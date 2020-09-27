@@ -1,0 +1,27 @@
+Fonts 
+https://fonts.google.com/
+
+For dropMenu and Navibar
+https://www.youtube.com/watch?v=gXkqy0b4M5g&t=1547s
+https://www.w3schools.com/howto/howto_js_dropdown.asp
+https://www.w3schools.com/howto/howto_css_mega_menu.asp
+https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp
+
+Photos
+https://unsplash.com/
+
+Responsive
+https://www.w3schools.com/html/html_responsive.asp
+
+Footer
+https://www.w3schools.com/tags/tag_footer.asp
+
+Buttons
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button3
+
+Columns
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns
+
+INCIDENTS
+
+LESSONS
