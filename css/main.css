@@ -10,9 +10,13 @@
     padding: 0;
 }
 body {
-    background-color: #3A3632;
+    background-color:black;
     color:white;
     background-image:url(https://assets.weforum.org/global_future_council/image/fy-jnmtI1UbE13ARCi8xGxx3mTtJtu0qoUJnU2zQPI8.jpeg);
+}
+footer {
+    font-family: "Roboto", sans-serif;
+    float:right;
 }
 footer a {
     color:inherit;
@@ -125,5 +129,26 @@ footer a {
     margin-right: 25%;
     max-width:100%;
     height:auto;
+}
+/* About */
+.dropdown-content .header iframe {
+    text-align:center;
+    display: inline-block;
+    clear:both;
+}
+.aboutText {
+    margin-left: 10%;
+}
+.aboutText p {
+    text-align:left;
+    display: inline-block;
+    width:50%;
+}
+
+/* Services */
+.column2 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
 }
 /* Future Menu */
