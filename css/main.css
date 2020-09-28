@@ -137,29 +137,21 @@ footer a {
 /* Youtube Videos */
 .youtube {
     overflow: hidden;
-    position: relative;
-    width:50%;
+    max-width: 100%;
+    width:auto;
 }
-.youtube::after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
-}
-.youtube iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
+.youtube2 {
+    overflow: hidden;
+    display: inline-block;
+    clear:both;
+    max-width: 100%;
+    margin: 0 auto;
 }
 /* About */
-.dropdown-content .header iframe {
+.dropdown-content .header {
     text-align:center;
     display: inline-block;
     clear:both;
-}
-.aboutText {
-    margin-left: 10%;
 }
 .aboutText p {
     text-align:left;
