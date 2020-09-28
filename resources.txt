@@ -43,10 +43,10 @@ LESSONS
 27/09 - Time is really important. The first days I tried to do all the code myself 
         but there were too many things in not much time. The best it's implement
         the code from the net understanding what the purpose of that code.
+
 27/09 - To make your'e life easy you need to organize A LOT beforehand. :)
 
 TO DO
-
 28/09 
 [] Finish Services Pages + Button to acces to them. 
 [] Create page to request more info.

@@ -98,13 +98,17 @@ footer a {
 }
 /* Images dropMenu */
 .row {
-    display: flex;
     padding: 0 4px;
+    content: "";
+    clear: both;
+    display: table;
 }
 /* Create two equal columns that sits next to each other */
 .column {
     padding: 0 4px;
     position: relative;
+    max-width: 100%;
+    height: auto;
     text-align: center;
     color: white;
 }
@@ -122,13 +126,12 @@ footer a {
     top:5px;
 }
 .column img {
-    vertical-align: middle;
-    margin-left: 15%;
-    display:flex;
     padding:5px;
-    margin-right: 25%;
     max-width:100%;
     height:auto;
+    margin: 10px auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: block;
 }
 /* About */
 .dropdown-content .header iframe {
@@ -175,9 +178,41 @@ footer a {
     width: 50%;
     margin: 0 auto;
     margin-top: 5%;
+    margin-bottom: 20%;
 }
 .slides {
     background-color: rgba(0, 0, 0, 0.75);
     margin:1px;
 }
-/* Future Menu */
+/* Services Page*/
+
+.services {
+    font-family: "Roboto", sans-serif;
+    font-size: 120%;
+    max-height:90%;
+    height: auto;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: contain;
+}
+.services p h2 {
+    max-width: 50%;
+    height: auto;
+    text-align: justify;
+}
+
+.services img {
+    max-width: 70%;
+    margin: 10px auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: block;
+    height: auto;
+    padding: 5px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
