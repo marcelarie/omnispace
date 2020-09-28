@@ -30,6 +30,13 @@ https://stackoverflow.com/questions/30471557/git-push-master-fatal-you-are-not-c
 
 Links to parts of page
 https://stackoverflow.com/questions/15481911/linking-to-a-specific-part-of-a-web-page
+
+Contact
+https://www.w3schools.com/howto/howto_css_contact_form.asp
+
+Validation 
+https://www.tutorialrepublic.com/javascript-tutorial/javascript-form-validation.php
+
 INCIDENTS
 25/09 - I was editing my main.css file and there where no changes
         on the browser. Tired of searching on the web what was 
@@ -63,7 +70,9 @@ TO DO
 28/09 
 [X] Finish Services Pages + Button to acces to them. 
 [X] Create page to request more info.
-[] Make a Contact page on the dropMenu + validation with JS
+[X] Make a Contact page on the dropMenu + validation with JS
+    - I still need to fix the error when finally submiting. 
+      I will do a popup message insted.
 [] Create a gallery.
 [] BREADCRUMBS FOR EVERYTHING
 [] Featured contents on the Home page
