@@ -13,6 +13,7 @@ body {
     background-color:black;
     color:white;
     background-image:url(https://assets.weforum.org/global_future_council/image/fy-jnmtI1UbE13ARCi8xGxx3mTtJtu0qoUJnU2zQPI8.jpeg);
+    background-repeat: no-repeat;
 }
 footer {
     font-family: "Roboto", sans-serif;
@@ -209,10 +210,13 @@ footer a {
     height: auto;
     padding: 5px;
 }
+.div1, .div2 {
+    max-width: 50%;
+    height: auto;
+    float: right;
+    margin-bottom: 25%;
+}
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
+/*Gallery */
+.gallery {
 }

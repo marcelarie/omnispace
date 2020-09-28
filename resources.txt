@@ -48,7 +48,7 @@ LESSONS
 
 TO DO
 28/09 
-[] Finish Services Pages + Button to acces to them. 
+[X] Finish Services Pages + Button to acces to them. 
 [] Create page to request more info.
 [] Make a Contact page on the dropMenu + validation with JS
 [] Create a gallery.
