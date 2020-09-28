@@ -74,7 +74,7 @@ TO DO
     - I still need to fix the error when finally submiting. 
       I will do a popup message insted.
 [] Create a gallery.
-[] BREADCRUMBS FOR EVERYTHING
+[X] BREADCRUMBS FOR EVERYTHING
 [] Featured contents on the Home page
 [] MAKE IT RESPONSIVE
 [] USE THE reset.css 

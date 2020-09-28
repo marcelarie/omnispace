@@ -134,6 +134,24 @@ footer a {
     background-color: rgba(0, 0, 0, 0.75);
     display: block;
 }
+/* Youtube Videos */
+.youtube {
+    overflow: hidden;
+    position: relative;
+    width:50%;
+}
+.youtube::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
 /* About */
 .dropdown-content .header iframe {
     text-align:center;
@@ -244,7 +262,7 @@ input[type=submit]:hover {
 /* Sidebar Bread*/
 
 .sidenav {
-  width: 80px;
+  width: 90px;
   position: fixed;
   z-index: 1;
   top: 100px;
