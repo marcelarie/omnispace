@@ -22,6 +22,14 @@ https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button3
 Columns
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns
 
+Request page
+https://www.w3schools.com/howto/howto_css_newsletter.asp
+
+Fixed Git Merge error
+https://stackoverflow.com/questions/30471557/git-push-master-fatal-you-are-not-currently-on-a-branch/30471627
+
+Links to parts of page
+https://stackoverflow.com/questions/15481911/linking-to-a-specific-part-of-a-web-page
 INCIDENTS
 25/09 - I was editing my main.css file and there where no changes
         on the browser. Tired of searching on the web what was 

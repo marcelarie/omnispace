@@ -235,6 +235,12 @@ input[type=submit] {
 input[type=submit]:hover {
   opacity: 0.8;
 }
-/*Gallery */
+/* Contact */
+.contactForm {
+    width: 20%;
+    margin: 0 auto;
+}
+
+/* Gallery */
 .gallery {
 }

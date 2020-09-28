@@ -77,7 +77,7 @@
                                         <b>XE-540</b> you will feel the virtual world with all you're senses.</p>
                                     <br><br>
 
-                                    <form action="#Marcel">
+                                    <form action="#XE-540">
                                         <input class="buttonServ button1" type="submit" value="More info" />
                                     </form>
                                 </div>
@@ -93,7 +93,7 @@
                                         dinosaur? Donald Trump? The coronavirus ??!
                                         Now you can! With our latest <b>Beforma</b> technology !! Be one of the first to
                                         pre-order for 2022. Don't miss out.</p><br><br>
-                                    <form action="#">
+                                    <form action="#Beforma">
                                         <input class="buttonServ button1" type="submit" value="More info" />
                                     </form>
                                 </div>
@@ -110,7 +110,7 @@
                                         Icaro would have been saved with our <b>UltraME</b> bodies made of tungsten
                                         reinforced
                                         with nanobots.<p>
-                                            <form action="#">
+                                            <form action="#UltraMe">
                                                 <input class="buttonServ button1" type="submit" value="Reserve now" />
                                             </form>
                                 </div>
@@ -125,7 +125,56 @@
                 </button>
                 <div class="dropdown-content">
                     <div class="header">
-
+                        <form class="contactForm" name="contactForm" onsubmit="return validateForm()"
+                            action="/examples/actions/confirmation.php" method="post">
+                            <h2>Give us your data</h2>
+                            <div class="row">
+                                <label>Full Name</label>
+                                <input type="text" name="name">
+                                <div class="error" id="nameErr"></div>
+                            </div>
+                            <div class="row">
+                                <label>Email Address</label>
+                                <input type="text" name="email">
+                                <div class="error" id="emailErr"></div>
+                            </div>
+                            <div class="row">
+                                <label>Mobile Number</label>
+                                <input type="text" name="mobile" maxlength="10">
+                                <div class="error" id="mobileErr"></div>
+                            </div>
+                            <div class="row">
+                                <label>Country</label>
+                                <select name="country">
+                                    <option>Select</option>
+                                    <option>Australia</option>
+                                    <option>India</option>
+                                    <option>United States</option>
+                                    <option>United Kingdom</option>
+                                </select>
+                                <div class="error" id="countryErr"></div>
+                            </div>
+                            <div class="row">
+                                <label>Gender</label>
+                                <div class="form-inline">
+                                    <label><input type="radio" name="gender" value="male"> Male</label>
+                                    <label><input type="radio" name="gender" value="female"> Female</label>
+                                </div>
+                                <div class="error" id="genderErr"></div>
+                            </div>
+                            <div class="row">
+                                <label>Select department<i>(Optional)</i></label>
+                                <div class="form-inline">
+                                    <label><input type="checkbox" name="hobbies[]" value="sports"> Support</label>
+                                    <label><input type="checkbox" name="hobbies[]" value="movies"> Business
+                                        Information</label>
+                                    <label><input type="checkbox" name="hobbies[]" value="music">Human Resources</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -157,7 +206,7 @@
     <!-- Services -->
     <div class="services">
         <div>
-            <h2>XE-540</h2>
+            <h2 id="XE-540">XE-540</h2>
             <br>
             <p>Reusable, two-stage travel capsule designed and manufactured by Omnispace for the reliable
                 and safe
@@ -186,7 +235,8 @@
         <div>
             <h2>Beformae</h2>
             <br>
-            <p>Psychologists are working to understand how VR can be used to transport individuals into different
+            <p id="Beforma">Psychologists are working to understand how VR can be used to transport individuals into
+                different
                 bodies, and if it is possible to do so with animal avatars.<br>
 
                 “Virtual reality setups are particularly suited to create a tight bond between players and their avatars
@@ -220,7 +270,8 @@
         <div>
             <h2>UltraME</h2>
             <br>
-            <p>One of the most impressive features of the Android Robo-C is it can look like anyone you want. Its
+            <p id="UltraMe">One of the most impressive features of the Android Robo-C is it can look like anyone you
+                want. Its
                 built-in artificial intelligence (AI) can utilize over 100,000 speech modules and show over 600 unique
                 facial expressions. The humanoid robots are able to perform tasks like answering questions in shopping
                 centers, museums, and office reception. They can even put in a full day’s work as they don’t need to
@@ -257,6 +308,7 @@
 
     <!-- JScript's-->
     <script src="js/carrousel.js"></script>
+    <script src="js/contactForm.js"></script>
 </body>
 
 </html>
