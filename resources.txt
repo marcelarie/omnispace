@@ -102,8 +102,8 @@ TO DO
 [X] MAKE IT RESPONSIVE
 [X] USE THE reset.css 
 [X] Validate with https://validator.w3.org/
-[] see the README.md guidelines >> https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
-[] Testing with Safari, IE-11, Firefox, Chrome. (latest vers.)
+[X] see the README.md guidelines >> https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+[X] Testing with Safari, IE-11, Firefox, Chrome. (latest vers.)
     - Safari[X], IE-11[], Firefox[X], Chrome[X]
     - Errors with IE-11
         [] Home with white background insted of black.
@@ -113,44 +113,45 @@ TO DO
 
 
 [] List of tasks to be performed. ○○
-    ○ Priority of each task
-    ○ Title and description of each of them
-    ○ Difficulty level
-    ○ Estimated time for each task.
-    ○ Record of incidents that were detected during project execution.
-    ○ Record of lessons learned.
+    x Priority of each task
+    x Title and description of each of them
+    x Difficulty level
+    x Estimated time for each task.
+    x Record of incidents that were detected during project execution.
+    x Record of lessons learned.
     ○ The Chronogram of the project.
     ○ Requirements documentation.
     ○ Risk documentation in the event that these exist
     ○ Documentation about the git WORKFLOW you are going to use
     ○ Documentation about the tools used in the project
+
 [] You must ensure that your site is compatible with the main browsers in the market
-    ○ You can make use of third-party libraries
+    - You can make use of third-party libraries
     ○ You must document all your code
-    ○ You must separate the HTML layer from the JS and CSS layer
-    ○ You cannot use third-party libraries for the Javascript part
-    ○ You must make use of HTML 5
-    ○ You must use reset.css
-    ○ You must verify that your HTML code is validated by the w3c
-    ○ You must place the meta tags, titles and HTML attributes properly to enrich the
+    x You must separate the HTML layer from the JS and CSS layer
+    x You cannot use third-party libraries for the Javascript part
+    x You must make use of HTML 5
+    x You must use reset.css
+    x You must verify that your HTML code is validated by the w3c
+    x You must place the meta tags, titles and HTML attributes properly to enrich the
         HTML with the maximum possible semantics
     ○ You must use good HTML practices
     ○ Your code must be correctly formatted
-    ○ You must use GIT
-    ○ Write clear and concise commits, should not extend more than 50 characters.
-    ○ It has to be responsive
+    x You must use GIT
+    x Write clear and concise commits, should not extend more than 50 characters.
+    x It has to be responsive
     ○ Take into account the part of SEO in page in terms of attributes and good practices in
         HTML that may affect in some way.
-    ○ All code included comments need to be write in English
-    ○ Use a code style like camelCase
-    ○ In the case of using HTML never use inline styles
-    ○ In the case of using different programming language always define the
+    x All code included comments need to be write in English
+    x Use a code style like camelCase
+    x In the case of using HTML never use inline styles
+    - In the case of using different programming language always define the
         implementation in separate terms
-    ○ It is recommended to divide the tasks into several subtasks so that you can associate
+    x It is recommended to divide the tasks into several subtasks so that you can associate
         each particular step of the construction with a specific commitment.
-    ○ The project documentation requires a PDF version
-    ○ You should try as much as possible that the commits and planned tasks are the same
-    ○ Delete unused files
-    ○ You must create a correctly documented README.md file in the root directory of the
+    x The project documentation requires a PDF version
+    x You should try as much as possible that the commits and planned tasks are the same
+    x Delete unused files
+    x You must create a correctly documented README.md file in the root directory of the
     project (see guidelines in Resources)
 
