@@ -20,7 +20,68 @@
             <li><a href="http://marcelarie.com/omnispace/index.html?#UltraMe">4. UltraME</a></li>
         </ul>
     </div>
-
+    <!-- Side Contact Bar -->
+    <div id="mySidenav" class="sidenav2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- CONTACT MENU -->
+        <div class="contactMenu">
+            <form class="contactForm" name="contactForm" onsubmit="return validateForm()"
+                action="/examples/actions/confirmation.php" method="post">
+                <h2>Give us your data</h2>
+                <div class="row">
+                    <label>Full Name</label>
+                    <input type="text" name="name">
+                    <div class="error" id="nameErr"></div>
+                </div>
+                <div class="row">
+                    <label>Email Address</label>
+                    <input type="text" name="email">
+                    <div class="error" id="emailErr"></div>
+                </div>
+                <div class="row">
+                    <label>Mobile Number</label>
+                    <input type="text" name="mobile" maxlength="10">
+                    <div class="error" id="mobileErr"></div>
+                </div>
+                <div class="row">
+                    <label>Country</label>
+                    <select name="country">
+                        <option>Select</option>
+                        <option>Australia</option>
+                        <option>India</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                    </select>
+                    <div class="error" id="countryErr"></div>
+                </div>
+                <div class="row">
+                    <label>Gender</label>
+                    <div class="form-inline">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                    <div class="error" id="genderErr"></div>
+                </div>
+                <div class="row">
+                    <label>Select department<i>(Optional)</i></label>
+                    <div class="form-inline">
+                        <label><input type="checkbox" name="hobbies[]" value="sports"> Support</label>
+                        <label><input type="checkbox" name="hobbies[]" value="movies"> Business
+                            Information</label>
+                        <label><input type="checkbox" name="hobbies[]" value="music">Human Resources</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <!-- END CONTACT MENU -->
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <div class="sideHustle">
+        <span class="sideButton" onclick="openNav()">Contact</span>
+    </div>
     <header>
         <img class="logo" src="files/logos/omnilogo.png" alt="logo">
         <!-- Navigation Bar -->
@@ -135,68 +196,8 @@
                     </div>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Contact
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <div class="header">
-                        <form class="contactForm" name="contactForm" onsubmit="return validateForm()"
-                            action="/examples/actions/confirmation.php" method="post">
-                            <h2>Give us your data</h2>
-                            <div class="row">
-                                <label>Full Name</label>
-                                <input type="text" name="name">
-                                <div class="error" id="nameErr"></div>
-                            </div>
-                            <div class="row">
-                                <label>Email Address</label>
-                                <input type="text" name="email">
-                                <div class="error" id="emailErr"></div>
-                            </div>
-                            <div class="row">
-                                <label>Mobile Number</label>
-                                <input type="text" name="mobile" maxlength="10">
-                                <div class="error" id="mobileErr"></div>
-                            </div>
-                            <div class="row">
-                                <label>Country</label>
-                                <select name="country">
-                                    <option>Select</option>
-                                    <option>Australia</option>
-                                    <option>India</option>
-                                    <option>United States</option>
-                                    <option>United Kingdom</option>
-                                </select>
-                                <div class="error" id="countryErr"></div>
-                            </div>
-                            <div class="row">
-                                <label>Gender</label>
-                                <div class="form-inline">
-                                    <label><input type="radio" name="gender" value="male"> Male</label>
-                                    <label><input type="radio" name="gender" value="female"> Female</label>
-                                </div>
-                                <div class="error" id="genderErr"></div>
-                            </div>
-                            <div class="row">
-                                <label>Select department<i>(Optional)</i></label>
-                                <div class="form-inline">
-                                    <label><input type="checkbox" name="hobbies[]" value="sports"> Support</label>
-                                    <label><input type="checkbox" name="hobbies[]" value="movies"> Business
-                                        Information</label>
-                                    <label><input type="checkbox" name="hobbies[]" value="music">Human Resources</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <input type="submit" value="Submit">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- Menu Services // I'm tired of reality button-->
-        <!-- Services menu comesfrom the side -->
+        <!-- Menu Services -->
     </header>
     <div class="centerText">
         <h1>FIND YOUR FUTURE</h1>
@@ -325,6 +326,7 @@
     <!-- JScript's-->
     <script src="js/carrousel.js"></script>
     <script src="js/contactForm.js"></script>
+    <script src="js/sideBar.js"></script>
 </body>
 
 </html>
