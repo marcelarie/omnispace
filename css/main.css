@@ -271,7 +271,14 @@ table {
     height: auto;
     float: right;
 }
-
+@media all and (max-width: 400px) {
+    .column2 p {
+        display: none;
+    }
+    object {
+        display: none;
+    }
+}
 /* Request info */
 .container {
   padding: 20px;
