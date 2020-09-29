@@ -119,11 +119,11 @@ TO DO
     x Estimated time for each task.
     x Record of incidents that were detected during project execution.
     x Record of lessons learned.
-    ○ The Chronogram of the project.
+    x The Chronogram of the project.
     ○ Requirements documentation.
     ○ Risk documentation in the event that these exist
-    ○ Documentation about the git WORKFLOW you are going to use
-    ○ Documentation about the tools used in the project
+    x Documentation about the git WORKFLOW you are going to use
+    x Documentation about the tools used in the project
 
 [] You must ensure that your site is compatible with the main browsers in the market
     - You can make use of third-party libraries
