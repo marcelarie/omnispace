@@ -9,6 +9,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: 0;
 }
 body {
     background-color:black;
@@ -313,6 +314,25 @@ input[type=submit]:hover {
 .sideButton {
     font-size: 16px;
     cursor: pointer;
+    background-color: #282828;
+    color: white;
+    font-family: "Space Mono", monospace;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    padding: 1rem 1rem;
+    margin: 0;
+    text-decoration: none;
+}
+.sideButton:hover,.sideButton:focus {
+    background-color: #212121;
+    outline: 0;
+}
+.sideButton:active {
+    transform: scale(0.99);
 }
 .sidenav2 {
     height: 100%; /* 100% Full-height */
