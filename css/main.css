@@ -340,7 +340,11 @@ input[type=submit]:hover {
 }
 
  /* Gallery */
-.row3 > .column {
+.galleryMenu {
+    width: 50%;
+    margin: 0 auto;
+}
+.row3 > .column3 {
   padding: 0 8px;
 }
 .row3:after {
@@ -349,9 +353,13 @@ input[type=submit]:hover {
   clear: both;
 }
 /* Create four equal columns that floats next to eachother */
-.column {
+.column3 {
   float: left;
-  width: 25%;
+  width: 50%;
+}
+.column3 img {
+    max-width: 100%;
+    height: auto;
 }
 /* The Modal (background) */
 .modal {
@@ -369,7 +377,7 @@ input[type=submit]:hover {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: black;
   margin: auto;
   padding: 0;
   width: 90%;
@@ -391,7 +399,7 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 /* Hide the slides by default */
-.mySlides {
+.mySlides2 {
   display: none;
 }
 /* Next & previous buttons */
@@ -434,10 +442,13 @@ input[type=submit]:hover {
   text-align: center;
   background-color: black;
   padding: 2px 16px;
-  color: white;
+  color: black;
 }
 img.demo {
   opacity: 0.6;
+  max-width: 10%;
+  float: left;
+  height: auto;
 }
 .active,
 .demo:hover {
