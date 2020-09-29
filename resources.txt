@@ -1,6 +1,9 @@
 Fonts 
 https://fonts.google.com/
 
+Button styles
+https://css-tricks.com/overriding-default-button-styles/
+
 Line Height
 https://www.w3schools.com/cssref/pr_dim_line-height.asp
 
@@ -105,6 +108,7 @@ TO DO
     - Errors with IE-11
         [] Home with white background insted of black.
         [] When clicking on the links of BREADCRUMBS the page does a flash.
+        
 
 
 

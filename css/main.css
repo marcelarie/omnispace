@@ -7,8 +7,6 @@
 /* Base */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     outline: 0;
 }
 body {
@@ -19,6 +17,7 @@ body {
 }
 footer {
     font-family: "Roboto", sans-serif;
+    font-size: 65%;
     float:right;
 }
 footer a {
@@ -271,6 +270,7 @@ table {
 .div1, .div2 {
     max-width: 50%;
     height: auto;
+    margin-bottom: 7%;
     float: right;
 }
 @media all and (max-width: 400px) {
@@ -284,7 +284,24 @@ table {
 /* Request info */
 .container {
   padding: 20px;
+  max-width: 50%;
+  margin: 0 auto;
   background-color: transparent;
+}
+.requestInfoText {
+    text-align: center;
+    margin: 0;
+}
+
+
+#Beforma {
+    padding: 30px;
+}
+#UltraMe {
+    padding: 30px;
+}
+#XE-540txt { 
+    padding: 30px;
 }
 input[type=text], input[type=submit] {
   width: 100%;
