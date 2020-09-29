@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <title>Omnispace</title>
     <meta name="description" content="Making you're problems disappear by changing of universe.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,31 +9,133 @@
 </head>
 
 <body>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <div id="breadcrumb"></div>
+        <ul id="navigation_links">
+            <li><a href="http://marcelarie.com/omnispace/index.html">1. Home</a></li>
+            <li><a href="http://marcelarie.com/omnispace/index.html?#XE-540">2. XE-540</a></li>
+            <li><a href="http://marcelarie.com/omnispace/index.html?#Beforma">3. Beforma</a></li>
+            <li><a href="http://marcelarie.com/omnispace/index.html?#UltraMe">4. UltraME</a></li>
+        </ul>
+    </div>
+    <!-- Side Contact Bar -->
+    <div id="mySidenav" class="sidenav2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- CONTACT MENU -->
+        <div class="contactMenu">
+            <form class="contactForm" name="contactForm" onsubmit="return validateForm()"
+                action="/examples/actions/confirmation.php" method="post">
+                <h2>Give us your data</h2>
+                <div class="row">
+                    <label>Full Name</label>
+                    <input type="text" name="name">
+                    <div class="error" id="nameErr"></div>
+                </div>
+                <div class="row">
+                    <label>Email Address</label>
+                    <input type="text" name="email">
+                    <div class="error" id="emailErr"></div>
+                </div>
+                <div class="row">
+                    <label>Mobile Number</label>
+                    <input type="text" name="mobile" maxlength="10">
+                    <div class="error" id="mobileErr"></div>
+                </div>
+                <div class="row">
+                    <label>Country</label>
+                    <select name="country">
+                        <option>Select</option>
+                        <option>Australia</option>
+                        <option>India</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                    </select>
+                    <div class="error" id="countryErr"></div>
+                </div>
+                <div class="row">
+                    <label>Gender</label>
+                    <div class="form-inline">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                    <div class="error" id="genderErr"></div>
+                </div>
+                <div class="row">
+                    <label>Select department<i>(Optional)</i></label>
+                    <div class="form-inline">
+                        <label><input type="checkbox" name="hobbies[]" value="sports"> Support</label>
+                        <label><input type="checkbox" name="hobbies[]" value="movies"> Business
+                            Information</label>
+                        <label><input type="checkbox" name="hobbies[]" value="music">Human Resources</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <!-- END CONTACT MENU -->
+    </div>
+    <!-- Use any element to open the sidenav -->
+    <div class="sideHustle">
+        <span class="sideButton" onclick="openNav()">Contact</span>
+    </div>
     <header>
         <img class="logo" src="files/logos/omnilogo.png" alt="logo">
         <!-- Navigation Bar -->
         <div class="navbar">
-            <a href="index.html">Home</a>
             <div class="dropdown">
                 <button class="dropbtn">Products
                     <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-content">
-                    <div class="header">
-                        <div class="row">
-                            <div class="column">
-                                <img src="files/images/happy.jpg">
-                                <div class="bottom-right">Our most advanced all-in-one VR system yet.</div>
-                                <div class="top-left">Holo-Xa544</div>
-                            </div>
-                            <div class="column">
-                                <img src="files/images/android.jpg">
-                                <div class="bottom-right">For the full experience buy a new body.</div>
-                                <div class="top-left">UltraME</div>
+                    <div class="dropdown-content">
+                        <div class="header">
+                        <!-- Products Gallery -->
+                        <!-- Images used to open the lightbox -->
+                        <div class="galleryMenu">
+                            <div class="row3">
+                              <div class="column3">
+                                  <img src="files/images/happy.jpg" alt="Happy Virutal World" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                              </div>
+                              <div class="column3">
+                                <img src="files/images/android.jpg" alt="We are all the same at the end" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                              </div>
                             </div>
                         </div>
+                            <!-- The Modal/Lightbox -->
+                            <div id="myModal" class="modal">
+                              <span class="close cursor" onclick="closeModal()">&times;</span>
+                              <div class="modal-content">
+
+                                <div class="mySlides2">
+                                  <div class="numbertext">Halo-Xa544</div>
+                                  <div class="numbertext2">Our most advanced all-in-one VR <p>system yet.</p><br> Starts at 499$</div>
+                                  <img class="imgLightbox" src="files/images/happy.jpg" alt="Happy Virutal World">
+                                </div>
+
+                                <div class="mySlides2">
+                                    <div class="numbertext">UltraME</div>
+                                    <div class="numbertext2">For the full experience,<p>buy a new body.</p><br> Starts at 15.000$</div>
+                                  <img class="imgLightbox" src="files/images/android.jpg" alt="We are all the same at the end">
+                                </div>
+                                <!-- Caption text -->
+                                <div class="caption-container">
+                                  <p id="caption"></p>
+                                </div>
+
+                                <!-- Thumbnail image controls -->
+                                <div class="column">
+                                    <img class="demo" src="files/images/happy.jpg" onclick="currentSlide(1)" alt="">
+                                </div>
+                                <div class="column">
+                                  <img class="demo" src="files/images/android.jpg" onclick="currentSlide(2)" alt="">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- END -->
                     </div>
-                </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">About Us
@@ -44,17 +145,21 @@
                     <div class="header">
                         <div class="aboutText">
                             <h2>MAKING AN IMPACT</h2>
+                            <br>
                             <p>At Omnispace, we are actively developing technologies with the potential to change the
                                 course of life on Earth and beyond. We believe that hard work and innovative solutions
                                 result in big gains, so we prioritize hiring top talent and cultivating a culture based
                                 on merit. From building our virtual and augmented reality system to building better and
-                                more durable bodys and deploying our Starlink broadband internet system, all SpaceX
+                                more durable bodys and deploying our MEGAnet broadband internet system, all Omnispace
                                 employees directly contribute to making our mission of making humanity multiplanetary a
                                 reality.</p>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5_bVkbG1ZCo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                            <br>
+                            <div>
+                                <object class="youtube2"
+                                    style="width: 520px; height: 325px; float: none; clear: both; margin: 2px auto;"
+                                    data="https://www.youtube-nocookie.com/embed/5_bVkbG1ZCo?controls=0">
+                                </object>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -68,37 +173,36 @@
                             <div class="row">
                                 <div class="column2">
                                     <h3>PERFECT HOLIDAYS</h3>
-                                    <img src="https://static.elcorreo.com/www/multimedia/202005/19/media/cortadas/gladiator-03-ksv-U110224036167U6F-1248x770@RC.jpg"
-                                        width="95%">
+                                    <br>
+                                    <img class="imgServ" alt="Gladiator" src="https://static.elcorreo.com/www/multimedia/202005/19/media/cortadas/gladiator-03-ksv-U110224036167U6F-1248x770@RC.jpg">
                                     <p>With our new Travel system you can have the holidays that you always wanted.
                                         Travel not only world-wide but time-wide! With our new reality capsule
                                         <b>XE-540</b> you will feel the virtual world with all you're senses.</p>
-                                    <br><br>
 
-                                    <form action="#Marcel">
+                                    <form action="#XE-540">
                                         <input class="buttonServ button1" type="submit" value="More info" />
                                     </form>
                                 </div>
                                 <div class="column2">
                                     <h3>BE WHAT YOU WANT TO BE</h3>
-                                    <iframe width="100%" height="50%"
-                                        src="https://www.youtube-nocookie.com/embed/bjtxmwZTkIE?controls=0&amp;start=150"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
+                                    <br>
+                                    <object class="youtube"
+                                        style="width: 720px; height: 280px; float: none; clear: both; margin: 2px auto;"
+                                        data="https://www.youtube-nocookie.com/embed/bjtxmwZTkIE?controls=0&amp;start=20">
+                                    </object>
                                     <p>
                                         If you could choose to be another being, whatever it is, what would it be? A
                                         dinosaur? Donald Trump? The coronavirus ??!
                                         Now you can! With our latest <b>Beforma</b> technology !! Be one of the first to
-                                        pre-order for 2022. Don't miss out.</p><br><br>
-                                    <form action="#">
+                                        pre-order for 2022. Don't miss out.</p>
+                                    <form action="#Beforma">
                                         <input class="buttonServ button1" type="submit" value="More info" />
                                     </form>
                                 </div>
                                 <div class="column2">
                                     <h3>EXPLORE THE IMPOSSIBLE</h3>
-                                    <img src="https://static.emisorasunidas.com/uploads/2019/07/cyborg.jpg"
-                                        width="100%">
+                                    <br>
+                                    <img class="imgServ" alt="Cyborg" src="https://static.emisorasunidas.com/uploads/2019/07/cyborg.jpg">
                                     <p><i>When both were ready to fly, Daedalus warned Icarus not to fly too high
                                             because
                                             the heat of the sun would melt the wax, nor too low because the foam of the
@@ -108,8 +212,8 @@
                                         Icaro would have been saved with our <b>UltraME</b> bodies made of tungsten
                                         reinforced
                                         with nanobots.<p>
-                                            <form action="#">
-                                                <input class="buttonServ button1" type="submit" value="Reserve now" />
+                                            <form action="#UltraMe">
+                                                <input class="buttonServ button1" type="submit" value="Reserve" />
                                             </form>
                                 </div>
                             </div>
@@ -117,20 +221,10 @@
                     </div>
                 </div>
             </div>
-            <div class="dropdown">
-                <button class="dropbtn">Contact
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <div class="header">
-
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- Menu Services // I'm tired of reality button-->
-        <!-- Services menu comesfrom the side -->
+        <!-- Menu Services -->
     </header>
+    <br>
     <div class="centerText">
         <h1>FIND YOUR FUTURE</h1>
         <p>Omnispace is looking for world-class talent ready to tackle challenging projects that will ultimately enable
@@ -140,28 +234,126 @@
         <p>equity packages.</p>
     </div>
     <!-- Carrousel -->
-    <div class="slides">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1060&q=80">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80">
+        <div class="slides">
+            <img class="mySlides" alt="Child"
+                src="https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80">
+            <img class="mySlides" alt="IT"
+                src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
+            <img class="mySlides" alt="Robot"
+                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+            <img class="mySlides" alt="blueGirl"
+                src="https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1060&q=80">
+            <img class="mySlides" alt="robartender"
+                src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80">
+    </div>
+    <!-- Services -->
+    <div class="services">
+        <div>
+            <h2 id="XE-540">XE-540</h2>
+            <br>
+            <p>Reusable, two-stage travel capsule designed and manufactured by Omnispace for the reliable
+                and safe
+                transport of people and payloads into Earth orbit and beyond. XE-540 is the world’s first orbital
+                class reusable capsule. Reusability allows Omnispace to refly the most expensive parts of the capsule,
+                which
+                in turn drives down the cost of space access.</p>
+        </div>
+        <div class="div1">
+            <img alt="asianDroids" src="https://cf.bstatic.com/images/hotel/max1280x900/174/174969055.jpg">
+        </div>
+        <div class="div2">
+            <img alt="capsule" src="https://pix10.agoda.net/hotelImages/5968041/-1/c6eacd08eae8e4cf55015bd4bbe27605.jpg?s=1024x768">
+        </div>
+        <!-- Request info -->
+        <div class="container">
+            <h2>Request more information about the product</h2>
+        </div>
+        <div class="container" style="background-color:white">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="Email address" name="mail" required>
+        </div>
+        <div class="container">
+            <input type="submit" value="Subscribe">
+        </div>
+        <div>
+            <h2>Beformae</h2>
+            <br>
+            <p id="Beforma">Psychologists are working to understand how VR can be used to transport individuals into
+                different
+                bodies, and if it is possible to do so with animal avatars.<br>
+
+                “Virtual reality setups are particularly suited to create a tight bond between players and their avatars
+                up to a degree where we start perceiving the virtual representation as our own body,” said Andrey
+                Krekhov, a member of the projects research team based out of the University of Duisburg-Essen, Germany.
+                “We hypothesize that such an illusion of virtual body ownership (IVBO) has a particularly high, yet
+                overlooked potential for nonhumanoid avatars.”<br>
+
+                “In our opinion, incorporating animals as player avatars into VR has the potential to unveil a set of
+                novel game mechanics and maybe even lead to a “beastly” VR game genre,” reports the research team.
+                “Utilizing the abilities of animals such as flying as a bird or crawling as a spider could be
+                significantly more engaging in VR due to the increased presence compared to non-VR games.”</p>
+            <div class="div1">
+                <img alt="microLife" src="https://culturacientifica.com/app/uploads/2017/03/complejidad-animal.jpg">
+            </div>
+            <div class="div2">
+                <img alt="frog" src="https://s1.eestatic.com/2015/11/24/actualidad/Actualidad_81752070_129240003_1024x576.jpg">
+            </div>
+            <!-- Request info -->
+            <div class="container">
+                <h2>Request more information about the product</h2>
+            </div>
+            <div class="container" style="background-color:white">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email address" name="mail" required>
+            </div>
+            <div class="container">
+                <input type="submit" value="Subscribe">
+            </div>
+        </div>
+        <div>
+            <h2>UltraME</h2>
+            <br>
+            <p id="UltraMe">One of the most impressive features of the Android Robo-C is it can look like anyone you
+                want. Its
+                built-in artificial intelligence (AI) can utilize over 100,000 speech modules and show over 600 unique
+                facial expressions. The humanoid robots are able to perform tasks like answering questions in shopping
+                centers, museums, and office reception. They can even put in a full day’s work as they don’t need to
+                recharge for eight hours.<br>The Robo-C is the first humanoid robot that can handle business processes
+                with the appearance of a human. Dozens of Robo-C’s are already working in 35 countries in roles such as
+                administrators, consultants, and concierges. It is anticipated that more than a thousand of these
+                humanoid robots will be deployed by 2024.</p>
+            <div class="div1">
+                <img alt="android1"
+                    src="https://www.washingtonpost.com/resizer/EHYGvktXfcPgp1bISS7qrv1Es6o=/arc-anglerfish-washpost-prod-washpost/public/CD66RWSTYII6TKUDKBHQQ27V2Y.jpg">
+            </div>
+            <div class="div2">
+                <img alt="android2" src="https://miro.medium.com/max/1280/1*LjRy1HSVR3kjn7tlqfLcjA.png">
+            </div>
+            <!-- Request info -->
+            <div class="container">
+                <h2>Request more information about the product</h2>
+            </div>
+            <div class="container" style="background-color:white">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email address" name="mail" required>
+            </div>
+            <div class="container">
+                <input type="submit" value="Subscribe">
+            </div>
+        </div>
     </div>
     <!-- Footer -->
     <footer>
         <p>Author: Marcel Arie</p>
-        <a href="mailto:marcelarie@gmail.com">marcelarie@gmail.com</a></p>
+        <p><a href="mailto:marcelarie@gmail.com">marcelarie@gmail.com</a></p>
         <p>This is a project made for the entry-challenge for Assembler School. letsGo!</p>
     </footer>
 
     <!-- JScript's-->
-    <script src="js/dropMenu.js"></script>
     <script src="js/carrousel.js"></script>
+    <script src="js/contactForm.js"></script>
+    <script src="js/sideBar.js"></script>
+    <script src="js/galleryMenu.js"></script>
 </body>
 
 </html>

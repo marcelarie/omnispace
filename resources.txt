@@ -1,6 +1,15 @@
 Fonts 
 https://fonts.google.com/
 
+<<<<<<< HEAD
+=======
+Line Height
+https://www.w3schools.com/cssref/pr_dim_line-height.asp
+
+Reset.css 
+https://meyerweb.com/eric/tools/css/reset/
+
+>>>>>>> develop
 For dropMenu and Navibar
 https://www.youtube.com/watch?v=gXkqy0b4M5g&t=1547s
 https://www.w3schools.com/howto/howto_js_dropdown.asp
@@ -22,6 +31,131 @@ https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button3
 Columns
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_three_columns
 
+<<<<<<< HEAD
 INCIDENTS
 
 LESSONS
+=======
+Request page
+https://www.w3schools.com/howto/howto_css_newsletter.asp
+
+Fixed Git Merge error
+https://stackoverflow.com/questions/30471557/git-push-master-fatal-you-are-not-currently-on-a-branch/30471627
+
+Links to parts of page
+https://stackoverflow.com/questions/15481911/linking-to-a-specific-part-of-a-web-page
+
+Contact
+https://www.w3schools.com/howto/howto_css_contact_form.asp
+
+Validation 
+https://www.tutorialrepublic.com/javascript-tutorial/javascript-form-validation.php
+
+AutoSidebar
+https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+
+YouTube with no iframe 
+https://stackoverflow.com/questions/18726480/embed-html5-youtube-video-without-iframe
+
+Gallery 
+https://www.w3schools.com/howto/howto_js_lightbox.asp
+
+Media Query
+https://www.youtube.com/watch?v=yU7jJ3NbPdA
+
+INCIDENTS
+25/09 - I was editing my main.css file and there where no changes
+        on the browser. Tired of searching on the web what was 
+        happening finally I find that there where two main.css files
+        one in the folder css/ and the other on the / root folder. 
+        git hash:fb96192,7379668 
+
+26/09 - JS script for dropMenu wasn't working because some propeties
+        of CSS where causing problems. Here I started to use code
+        from W3Schools.com git hash:18b465b, 7e79244
+
+27/09 - Merged wrong master with develop, so all the files where
+        deleted. I recovered evrything aborting and then the merge
+        was successful. The only thing is that I wanted just a merge
+        with the most recent commit and not loading all the commits.
+        I will find out how to do that. git hash: 4b08c39
+
+28/09 - I did a hard reset on Git and almost deleted a lot of commits. Fixed it 
+        doing a git push origin HEAD:develop --force. uff..
+
+28/09 - Contact page moved to the left. Need to fix it.
+
+LESSONS
+27/09 - Time is really important. The first days I tried to do all the code myself 
+        but there were too many things in not much time. The best it's implement
+        the code from the net understanding what the purpose of that code.
+
+27/09 - To make your'e life easy you need to organize A LOT beforehand. :)
+
+28/09 -  
+
+TO DO
+28/09 
+[X] Finish Services Pages + Button to acces to them. 
+[X] Create page to request more info.
+[X] Make a Contact page on the dropMenu + validation with JS
+[X] Create a gallery.
+[X] BREADCRUMBS FOR EVERYTHING
+[?] Featured contents on the Home page
+[X] FIX CONTACT PAGE
+[X] MAKE IT RESPONSIVE
+[X] USE THE reset.css 
+[X] Validate with https://validator.w3.org/
+[] see the README.md guidelines >> https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+[] Testing with Safari, IE-11, Firefox, Chrome. (latest vers.)
+    - Safari[X], IE-11[], Firefox[X], Chrome[X]
+    - Errors with IE-11
+        [] Home with white background insted of black.
+        [] When clicking on the links of BREADCRUMBS the page does a flash.
+
+
+
+[] List of tasks to be performed. ○○
+    ○ Priority of each task
+    ○ Title and description of each of them
+    ○ Difficulty level
+    ○ Estimated time for each task.
+    ○ Record of incidents that were detected during project execution.
+    ○ Record of lessons learned.
+    ○ The Chronogram of the project.
+    ○ Requirements documentation.
+    ○ Risk documentation in the event that these exist
+    ○ Documentation about the git WORKFLOW you are going to use
+    ○ Documentation about the tools used in the project
+[] You must ensure that your site is compatible with the main browsers in the market
+    ○ You can make use of third-party libraries
+    ○ You must document all your code
+    ○ You must separate the HTML layer from the JS and CSS layer
+    ○ You cannot use third-party libraries for the Javascript part
+    ○ You must make use of HTML 5
+    ○ You must use reset.css
+    ○ You must verify that your HTML code is validated by the w3c
+    ○ You must place the meta tags, titles and HTML attributes properly to enrich the
+        HTML with the maximum possible semantics
+    ○ You must use good HTML practices
+    ○ Your code must be correctly formatted
+    ○ You must use GIT
+    ○ Write clear and concise commits, should not extend more than 50 characters.
+    ○ It has to be responsive
+    ○ Take into account the part of SEO in page in terms of attributes and good practices in
+        HTML that may affect in some way.
+    ○ All code included comments need to be write in English
+    ○ Use a code style like camelCase
+    ○ In the case of using HTML never use inline styles
+    ○ In the case of using different programming language always define the
+        implementation in separate terms
+    ○ It is recommended to divide the tasks into several subtasks so that you can associate
+        each particular step of the construction with a specific commitment.
+    ○ The project documentation requires a PDF version
+    ○ You should try as much as possible that the commits and planned tasks are the same
+    ○ Delete unused files
+    ○ You must create a correctly documented README.md file in the root directory of the
+    project (see guidelines in Resources)
+
+>>>>>>> develop
