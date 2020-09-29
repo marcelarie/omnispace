@@ -1,7 +1,7 @@
     /* Fonts */
 /* Space */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-/* Roboto */
+    /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
 /* Base */
@@ -432,10 +432,17 @@ input[type=submit]:hover {
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 30px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+.numbertext2 {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 340px;
 }
 /* Caption text */
 .caption-container {
