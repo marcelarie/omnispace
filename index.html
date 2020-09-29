@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>Omnispace</title>
@@ -90,24 +89,75 @@
                 <button class="dropbtn">Products
                     <i class="fa fa-caret-down"></i>
                 </button>
-                <div class="dropdown-content">
-                    <div class="header">
-                        <div class="row">
-                            <div class="column div1">
-                                <img src="files/images/happy.jpg">
-                                <div class="bottom-right">Our most advanced all-in-one VR system yet. Starts at 499$
-                                </div>
-                                <div class="top-left">Holo-Xa544</div>
-                            </div>
-                            <div class="column div2">
-                                <img src="files/images/android.jpg">
-                                <div class="bottom-right">For the full experience buy a new body. Starts at 15.000$
-                                </div>
-                                <div class="top-left">UltraME</div>
+                    <div class="dropdown-content">
+                        <div class="header">
+                        <!-- Products Gallery -->
+                        <!-- Images used to open the lightbox -->
+                        <div class="galleryMenu">
+                            <div class="row3">
+                              <div class="column3">
+                                  <img src="files/images/happy.jpg"onclick="openModal();currentSlide(1)" class="hover-shadow">
+                              </div>
+                              <div class="column3">
+                                <img src="files/images/android.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                              </div>
                             </div>
                         </div>
+                            <!-- The Modal/Lightbox -->
+                            <div id="myModal" class="modal">
+                              <span class="close cursor" onclick="closeModal()">&times;</span>
+                              <div class="modal-content">
+
+                                <div class="mySlides2">
+                                  <div class="numbertext">1 / 4</div>
+                                  <img src="img1_wide.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides2">
+                                  <div class="numbertext">2 / 4</div>
+                                  <img src="img2_wide.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides2">
+                                  <div class="numbertext">3 / 4</div>
+                                  <img src="img3_wide.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides2">
+                                  <div class="numbertext">4 / 4</div>
+                                  <img src="img4_wide.jpg" style="width:100%">
+                                </div>
+
+                                <!-- Next/previous controls -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                <!-- Caption text -->
+                                <div class="caption-container">
+                                  <p id="caption"></p>
+                                </div>
+
+                                <!-- Thumbnail image controls -->
+                                <div class="column">
+                                  <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+                                </div>
+
+                                <div class="column">
+                                  <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+                                </div>
+
+                                <div class="column">
+                                  <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                                </div>
+
+                                <div class="column">
+                                  <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!-- END -->
                     </div>
-                </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn">About Us
@@ -199,6 +249,7 @@
         </div>
         <!-- Menu Services -->
     </header>
+    <br>
     <div class="centerText">
         <h1>FIND YOUR FUTURE</h1>
         <p>Omnispace is looking for world-class talent ready to tackle challenging projects that will ultimately enable
@@ -208,17 +259,17 @@
         <p>equity packages.</p>
     </div>
     <!-- Carrousel -->
-    <div class="slides">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1060&q=80">
-        <img class="mySlides"
-            src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80">
+        <div class="slides">
+            <img class="mySlides"
+                src="https://images.unsplash.com/photo-1530825894095-9c184b068fcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80">
+            <img class="mySlides"
+                src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80">
+            <img class="mySlides"
+                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+            <img class="mySlides"
+                src="https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1060&q=80">
+            <img class="mySlides"
+                src="https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80">
     </div>
     <!-- Services -->
     <div class="services">
@@ -327,6 +378,7 @@
     <script src="js/carrousel.js"></script>
     <script src="js/contactForm.js"></script>
     <script src="js/sideBar.js"></script>
+    <script src="js/galleryMenu.js"></script>
 </body>
 
 </html>

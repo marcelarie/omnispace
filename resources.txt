@@ -39,9 +39,14 @@ https://www.tutorialrepublic.com/javascript-tutorial/javascript-form-validation.
 
 AutoSidebar
 https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+https://www.w3schools.com/howto/howto_js_sidenav.asp
 
 YouTube with no iframe 
 https://stackoverflow.com/questions/18726480/embed-html5-youtube-video-without-iframe
+
+Gallery 
+https://www.w3schools.com/howto/howto_js_lightbox.asp
+
 INCIDENTS
 25/09 - I was editing my main.css file and there where no changes
         on the browser. Tired of searching on the web what was 
@@ -63,6 +68,7 @@ INCIDENTS
         doing a git push origin HEAD:develop --force. uff..
 
 28/09 - Contact page moved to the left. Need to fix it.
+
 LESSONS
 27/09 - Time is really important. The first days I tried to do all the code myself 
         but there were too many things in not much time. The best it's implement
@@ -77,12 +83,10 @@ TO DO
 [X] Finish Services Pages + Button to acces to them. 
 [X] Create page to request more info.
 [X] Make a Contact page on the dropMenu + validation with JS
-    - I still need to fix the error when finally submiting. 
-      I will do a popup message insted.
 [] Create a gallery.
 [X] BREADCRUMBS FOR EVERYTHING
 [] Featured contents on the Home page
-[] FIX CONTACT PAGE
+[X] FIX CONTACT PAGE
 [] MAKE IT RESPONSIVE
 [] USE THE reset.css 
 [] Validate with https://validator.w3.org/
