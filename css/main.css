@@ -203,6 +203,7 @@ table {
 }
 
 /* Services */
+.imgServ {width: 100%;}
 .column2 {
     float: left;
     width: 33.33%;
@@ -394,6 +395,7 @@ input[type=submit]:hover {
 }
 
  /* Gallery */
+.imgLightbox {width: 40%;}
 .galleryMenu {
     width: 50%;
     margin: 0 auto;
