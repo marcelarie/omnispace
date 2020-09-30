@@ -12,7 +12,7 @@ After thinkig too much for something simple, I decided to make it about a fictio
 mega-corporation that was the biggest on the Virtual Reality, but on the not soo distant future.
 
 
-[>>> Link to the actual page \<\<\<](www.marcelarie.com/omnispace)
+Link to the actual page www.marcelarie.com/omnispace)
 
 Hope you like it. >:)
 
